@@ -1,1 +1,2 @@
-print('helloworld')
+"'#define helloworld'"
+print("helloworld")

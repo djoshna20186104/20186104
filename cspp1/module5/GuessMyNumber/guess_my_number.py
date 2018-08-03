@@ -1,20 +1,20 @@
-"'#Guess My Number Exercise'"
+#Guess My Number Exercise
 
 def main():
-    l = 1
+    l = 0
     h = 100
     a = input()
-    while a != "c":
-        s = (l + h)//2
-        print("is your secret number is" +str(s))
-        a = input()
+    while a !=  "c":
+        s=(l+h)//2 
+        print ("Is your secreat number is" + str(s) )
+        a=input()
         if a == "c":
             break
         elif a == "l":
-            l = s
+            l=s
         elif a == "h":
-            h = s
-    print("your secret number is " + str(s))
-    
+            h=s
+    print(" your secreat number was " + str(s))
+
 if __name__== "__main__":
-    main()
+	main()

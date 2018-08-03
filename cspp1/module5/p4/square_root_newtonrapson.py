@@ -9,12 +9,14 @@
 # input: 49
 # output: 6.999999999999991
 
+""find the square root of the number using Newton-Rapson method""
 def main():
-	s = raw_input()
-	# epsilon and step are initialized
-	# don't change these values
-	epsilon = 0.01
-	# your code starts here
-
-if __name__== "__main__":
-	main()
+    """newton-rapson method"""
+    square = int(input())
+    epsilon = 0.01
+    guess_value = square/2.0
+    while abs(guess_value * guess_value - square) >= epsilon:
+        guess_value = guess_value - (((guess_value**2) - square)/(2 * guess_value))
+    print(guess_value)
+if __name__ == "__main__":
+    main()

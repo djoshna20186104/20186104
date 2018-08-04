@@ -9,7 +9,7 @@ def main():
     Read number from the input, store it in variable num.
     '''
     num = int(input())
-    while num >= 0:
+    for num in range(0,6):
         if(num%3 == 0):
             print("Fizz")
         elif(num%5 == 0):

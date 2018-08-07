@@ -34,12 +34,12 @@ def paying_debt_off_in_a_year(balance, annual_interest_rate, monthly_payment_rat
         (monthly_interest_rate * monthly_unpaid_balance)
         balance = updated_balance_each_month
         i += 1
-    return round(balance,2)
+    return round(balance, 2)
 def main():
     ''' main function'''
     data = input()
     data = data.split(' ')
     data = list(map(float, data))
-    print("Remaining balance : "+ paying_debt_off_in_a_year(data[0], data[1], data[2]))
+    print("Remaining balance : "+ str(paying_debt_off_in_a_year(data[0], data[1], data[2])))
 if __name__ == "__main__":
     main()
